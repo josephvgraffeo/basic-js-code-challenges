@@ -82,7 +82,38 @@ console.log(`\n`);
 noNegatives([-1,-2,-4,-100, 0, 100, 200]);
 
 // 8. remove spaces in a string
+const noSpaces = (string) => {
+    let fixedString = string.replaceAll(" ", "");
+    console.log(fixedString);
+};
+
+console.log(`\n`);
+noSpaces("See you space cowboy...");
 
 // 9. return a boolean if a number is divisible by 10
+const isDivByTen = (num) => {
+    if (num % 10 === 0) {
+        console.log(true)
+    } else {
+        console.log(false)
+    };
+};
 
-// 10. return the number of vowel in a string
+console.log(`\n`);
+isDivByTen(10);
+isDivByTen(15);
+
+// 10. return the number of vowels in a string
+const countVowels = (string) => {
+    const vowels = ["a", "e", "i", "o", "u", "y"];
+    let vowelCount = 0;
+    for (i = 0; i <= string.length; i++) {
+        if (string[i] = vowels[i]) {
+            vowelCount++
+        };
+    };
+    console.log(vowelCount);
+};
+
+console.log(`\n`);
+countVowels("See you space cowboy...")
